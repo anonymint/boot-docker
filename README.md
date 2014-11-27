@@ -10,12 +10,15 @@ Prototype Spring-Boot with Docker that we can simply create a small service runn
 
 ### Usage
 Package Spring-Boot as one fat jar file
+
 	mvn package 
 
 Build docker container given a container name boot-docker
+
 	docker build -t boot-docker .
 
 Run Spring-Boot inside docker with [Docker dockerfile/java](https://registry.hub.docker.com/u/dockerfile/java/)
+
 	docker run -it --rm -p 8080:8080 boot-docker
 
 ### Further 
